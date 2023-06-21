@@ -44,7 +44,7 @@ export default function EditTeacher() {
 
   function profile() {
     axios
-      .get(`mentors/profile`)
+      .get(`/mentors/profile`)
       .then((response) => {
         const data = response.data.data;
         SetUser(data);
@@ -86,7 +86,7 @@ export default function EditTeacher() {
       genre_id: +genre_id,
     };
     axios
-      .post("mentors/genres", body, {
+      .post("/mentors/genres", body, {
         headers: {
           Authorization: `Bearer ${checkToken}`,
         },
@@ -202,7 +202,7 @@ export default function EditTeacher() {
     }
 
     axios
-      .put("mentors", formData, {
+      .put("/mentors", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
