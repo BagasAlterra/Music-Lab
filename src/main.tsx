@@ -6,8 +6,7 @@ import axios from "axios";
 
 import { GoogleOAuthProvider } from "@react-oauth/google";
 
-axios.defaults.baseURL =
-  "https://virtserver.swaggerhub.com/KHARISMAJANUAR/MusicLab-API/1.0.0";
+axios.defaults.baseURL = "https://musiclab.altapro.online";
 
 const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID;
 

@@ -53,7 +53,6 @@ const Login = () => {
         localStorage.setItem("token", JSON.stringify(data.token));
         setCookie("role", data.role, { path: "/" });
         setCookie("id", data.id, { path: "/" });
-
         MySwal.fire({
           title: "Welcome to MusicLab",
           text: message,
