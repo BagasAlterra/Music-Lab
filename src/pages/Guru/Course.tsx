@@ -199,7 +199,7 @@ const UploadCourse = () => {
     };
 
     axios
-      .post("mentors/classes", body, {
+      .post("/mentors/classes", body, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
